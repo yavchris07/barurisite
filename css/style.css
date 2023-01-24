@@ -18,7 +18,18 @@ h6 {
     color: #2a2a2a;
     font-weight: 500
 }
-
+/* ==================================== */
+/* .container{
+    background: transparent;
+}
+.d-none{
+    background: transparent;
+}
+.mp{
+    margin-top: -10px;
+    
+} */
+/* ==================================== */
 button:focus {
     outline: none;
     box-shadow: none
@@ -671,8 +682,9 @@ ul {
 }
 
 .offer_area {
-    background: url(../img/our/10.jpeg) no-repeat center;
-    background-size: cover
+    background: url(../img/our/01.jpeg) no-repeat center;
+    background-size: cover;
+    /* backdrop-filter: blur(15px); */
 }
 
 @media (max-width: 991px) {
@@ -3614,7 +3626,7 @@ h6 {
 }
 
 .single-product:hover .product-btm h4 {
-    color: #71cd14
+    color: #007bff
 }
 
 .latest_product_inner {
@@ -5298,5 +5310,5 @@ h6 {
 }
 
 .footer-area .footer-bottom .footer-social a:hover {
-    background: #71cd14
+    background: #298cdf
 }
