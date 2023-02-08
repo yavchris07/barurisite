@@ -121,9 +121,11 @@
                                   <td>".$all_vest['titre']."</td>
                                   <td><img src='../images/".$all_vest['img']."' /> </td>
                                   <td>
-                                    <a style=color:red; 
-                                        font-size:20px 
-                                      >
+                                  <a 
+                                    style=color:red; 
+                                    font-size:20px
+                                    href='./cores/team_cores.php?delete=".$all_vest['id']."'
+                                  >
                                      <i class='fa fa-trash-o fa-lg'></i>
                                      Supp.
                                     </a>

@@ -127,9 +127,13 @@
                                   <td><img src='../images/".$all_vest['img']."' /> </td>
                                   <td>".$all_vest['types']."</td>
                                   <td>
-                                  <a style=color:red; font-size:20px >
-                                  <i class='fa fa-trash-o fa-lg'></i>
-                                  Supp.
+                                  <a 
+                                    style=color:red; 
+                                    font-size:20px
+                                    href='./cores/new_register.php?delete=".$all_vest['id']."'
+                                  >
+                                    <i class='fa fa-trash-o fa-lg'></i>
+                                    Supp.
                                   </a>
                                 </td>
                                 </tr>";

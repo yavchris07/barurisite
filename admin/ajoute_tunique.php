@@ -119,24 +119,30 @@
                   <?php require './cores/db.php';
 
                   $response = $db->query("SELECT * from tunique");
-                  while($all_vest = $response->fetch()){
+                  while($all_tunik = $response->fetch()){
                     // echo "<tr>";
                     
                     // echo "</tr>";
                   
-                    echo "<tr> 
-                            <td>".$all_vest['id']."</td>
-                            <td>".$all_vest['nom']."</td>
-                            <td>".$all_vest['prix']."</td>
-                            <td><img src='../images/".$all_vest['img']."' /> </td>
-                            <td>".$all_vest['types']."</td>
-                            <td>
-                              <a style=color:red; font-size:20px >
+                    echo "
+                      <tr> 
+                        <td>".$all_tunik['id']."</td>
+                          <td>".$all_tunik['nom']."</td>
+                          <td>".$all_tunik['prix']."</td>
+                          <td><img src='../images/".$all_tunik['img']."' /> </td>
+                          <td>".$all_tunik['types']."</td>
+                          <td>
+                            <a 
+                              style=color:red; 
+                              font-size:20px
+                              href='./cores/tunique_cores.php?delete=".$all_tunik['id']."'
+                            >
                               <i class='fa fa-trash-o fa-lg'></i>
                               Supp.
-                              </a>
-                            </td>
-                          </tr>";
+                            </a>
+                        </td>
+                      </tr>"
+                    ;
                   }        
                   ?>                         
                   </tbody>

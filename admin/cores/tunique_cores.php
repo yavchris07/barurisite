@@ -33,7 +33,28 @@ function new_tunique(){
   }
 }
 
+function delete_tunique(){
+  require './db.php';
+  if(isset($_GET['delete'])){
+    $id = ($_GET['delete']);
+    //var_dump($id);
+    if (is_numeric($id)) {
+      //require './admin/cores/db.php';
+      $query = $db->query("DELETE FROM tunique WHERE id='".$id."'");
+      //$val= $query->exec();
+      if($query){
+        header('location: ../ajoute_tunique.php');
+        exit(); 
+      }else{
+        echo "Erreur due a la suppression !";
+      }
+    }
+  }
+}
 
 if(isset($_POST['ajout'])){
     new_tunique();
-  }
+}
+if(isset($_GET['delete'])){
+  delete_tunique();
+}

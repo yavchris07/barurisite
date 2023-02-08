@@ -45,14 +45,30 @@
 
 }
 
-      // $imagemisenavant= new upload_file();
-      // upload_file::upload($img);
-      // $uplaod_status=upload_file::$upload_cod;
-      // $uplaod_name = upload_file::$name_to_up;
-//MAIN
+function delete_veste(){
+  require './db.php';
+  if(isset($_GET['delete'])){
+    $id = ($_GET['delete']);
+    //var_dump($id);
+    if (is_numeric($id)) {
+      //require './admin/cores/db.php';
+      $query = $db->query("DELETE FROM veste WHERE id='".$id."'");
+      //$val= $query->exec();
+      if($query){
+        header('location: ../ajoute_veste.php');
+        exit(); 
+      }else{
+        echo "Erreur due a la suppression !";
+      }
+    }
+  }
+}
+
 if(isset($_POST['save'])){
   new_veste();
 }
-
+if(isset($_GET['delete'])){
+  delete_veste();
+}
 // echo "hello ";
 
