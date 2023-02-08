@@ -30,7 +30,7 @@ function new_connetion(){
                     session_start();
                     $_SESSION['authified']=$email_for_user;    
                    
-                    header('location:dash.php');
+                    header('location:dashboard.php');
                     exit();
                     
                } 

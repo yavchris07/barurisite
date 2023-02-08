@@ -53,7 +53,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="accueil.php">
+          <a class="navbar-brand logo_h" href="index.php">
             <img src="img/logo.png" alt="" style="widht:70px; height:50px"/>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

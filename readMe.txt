@@ -4,12 +4,15 @@ EMAIL
     victoirebakunzi@baruvi.net
     adim@23AKymn
 =>
-compte admin()
+compte admin pour le site: 
     victoirebakunzi@baruvi.net
     admin@23
 
     admin@baruvi.net
     admin@2TYmin
+Link pour le site (partie client):
+
+
 
 ancien : veZP@!l@]1yN
 nouveau : R#QcXq5?TiDH
