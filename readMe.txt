@@ -11,8 +11,7 @@ compte admin()
     admin@baruvi.net
     admin@2TYmin
 
-veZP@!l@]1yN
-veZP@!l@]1yN
-R#QcXq5?TiDH
+ancien : veZP@!l@]1yN
+nouveau : R#QcXq5?TiDH
 user: baruvine_baruvine
 database ; baruvine_baruvi_database

@@ -182,49 +182,7 @@
             ";
           }
         ?> 
-
-   
-
-
           
-<!-- 
-          <div class="kart">
-            <img 
-              src="./img/our/2.jpg" 
-              alt=""
-              >
-              <h4>Noms sdksjakdj</h4>
-              <p>Titre </p>
-          </div>
-
-          <div class="kart">
-            <img 
-              src="./img/our/2.jpg" 
-              alt=""
-              >
-              <h4>Noms sdksjakdj</h4>
-              <p>Titre </p>
-          </div>
-          <div class="kart">
-            <img 
-              src="./img/our/2.jpg" 
-              alt=""
-              >
-              <h4>Noms sdksjakdj</h4>
-              <p>Titre </p>
-          </div>
-
-          <div class="kart">
-            <img 
-              src="./img/our/2.jpg" 
-              alt=""
-              >
-              jfp2023TN7NeJ3AY(client)
-              <h4>Noms sdksjakdj</h4>
-              <p>Titre </p>
-          </div> -->
-
-           
         </div>
 
       </div>

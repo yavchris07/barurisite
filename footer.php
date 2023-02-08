@@ -50,15 +50,35 @@
         Copyright &copy;<script>document.write(new Date().getFullYear());
         </script> Tout droit reservé à Baruvi Business 2023 | site realisé
          par 
-        <a href="#" target="_blank">Fidba Graphics web team</a>
+        <a 
+          href="https://offre.fidbagraphics.com/"
+          target="_blank">
+          Fidba Graphics web team
+        </a>
         <i class="fa fa-code" aria-hidden=""></i>
  
         </p>
         <div class="col-lg-4 col-md-12 footer-social">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.facebook.com/groups/2978210792445513" target="_blank">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a 
+            href="https://twitter.com/BaruviBusiness" 
+            target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a 
+            href="https://www.linkedin.com/company/baruvi-business/"
+            target="_blank"
+            >
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a 
+            href="https://www.instagram.com/marque_baruvi/?hl=fr"
+            target="_blank"
+            >
+            <i class="fa fa-instagram"></i>
+          </a>
         </div>
       </div>
     </div>

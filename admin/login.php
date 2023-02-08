@@ -45,7 +45,7 @@
 										name="email" <?php if(isset($_POST['email'])){ $myvalue=$_POST['email'];?>
 										value="<?php echo $myvalue ;} ?>" 
 										class="form-control" 
-										placeholder="moi@gmail.com ou moi@barvuvi.net"
+										placeholder="moi@nom-domain.net"
 									>
 								</div>
 								<div class="form-group">
@@ -56,7 +56,7 @@
 										type="password" 
 										name="password" 
 										class="form-control" 
-										placeholder="******************************"
+										placeholder="************"
 									>
 								</div>
 								<div class="form-group text-right">
@@ -64,6 +64,7 @@
 									<button 
 										name="connection" 
 										class="btn btn-primary btn-block"
+										style="background:#2693ae; border:1px solid #2693ae;"
 									>
 									Se connecter
 								</button>
