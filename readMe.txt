@@ -1,16 +1,17 @@
 EMAIL
     client@baruvi.net
     jfp2023TN7NeJ3AY(client)
+
     victoirebakunzi@baruvi.net
     adim@23AKymn
-=>
-compte admin pour le site: 
-    victoirebakunzi@baruvi.net
+    
+compte admin pour le site: https://baruvi.net/admin/login.php
+    => victoirebakunzi@baruvi.net
     admin@23
 
-    admin@baruvi.net
+    => admin@baruvi.net
     admin@2TYmin
-Link pour le site (partie client):
+Link pour le site (partie client): https://baruvi.net/ ou www.baruvi.net
 
 
 

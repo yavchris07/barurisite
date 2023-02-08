@@ -12,8 +12,8 @@
               <p>Pour toute information nous oncernant</p>
             </div>
             <div class="page_link">
-              <a href="index.html">Accueil</a>
-              <a href="contact.html">Contactez Nous</a>
+              <a href="./accueil.php">Accueil</a>
+              <a href="#">Contactez Nous</a>
             </div>
           </div>
         </div>
