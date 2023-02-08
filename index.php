@@ -2,17 +2,28 @@
 
   <!--================Home Banner Area =================-->
 
-  <section class="offer_area">
+  <section class="offer_area" style="height:500px">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="offset-lg-0 col-lg-4 text-center">
+        <div class="offset-lg-8 col-lg-1 text-right">
           <div class="offer_content">
             <h2 class="text-uppercase">Baruvi Business</h2>
-            <h3 class="text-uppercase mb-40"> " L'habillement classe sur mesures " </h3>
+            <p style="color:grey">
+              " L'habillement classe sur mesures,habillement classe sur mesures " 
+            </p>
             <!-- <a href="#" class="main_btn mb-20 mt-5">Decouvrez Maintenant</a> -->
             <!-- <p style="color: white;">Limitez le temps de Solde</p> -->
           </div>
         </div>
+        <h3 
+          class="text-uppercase mb-40" 
+          style="
+            maring-right:5px;
+            color:orange;
+            bottom: 5px"
+          > 
+          " L'habillement classe sur mesures " 
+        </h3>
       </div>
     </div>
   </section>
@@ -30,14 +41,11 @@
         <div class="banner_content row">
           <div class="col-lg-12 box1">
             <!-- <p class="sub text-uppercase">Collection des Hommes</p> -->
-            <h3 style="color: gray;">
-              Nous produisons  de <span>vestes,</span>  de <span>tunique,</span> et des <span>chemises,</span> 
+            <h3 style="color: orange;">
+              Nous produisons  de <span>vestes,</span>  de <span>tuniques,</span> et des <span>chemises,</span> 
               pour hommes, femmes et enfants: selon vos choix, du tissus, de la couleur, du modèle et sur vos propres mesures <br>
               <span>Baruvi Business</span>
             </h3>
-            <!-- <p class="sub text-uppercase">" L'habillement classe sur mesures "</p> -->
-            <!-- <h4>La volaille a vu à sec qu'un endroit ensemble au-dessus.</h4> -->
-            <!-- <a class="main_btn mt-40" href="#">Voir la Collection</a> -->
           </div>
         </div>
       </div>
@@ -107,68 +115,155 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/1.jpg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Costume pour vrais hommes</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$135.00</span>
-                <!-- <del>$145.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Veste -->
+      <?php
+         require './admin/cores/db.php';
+          $veste = $db->query("SELECT * FROM veste where types='homme' ORDER BY id DESC limit 1");
+          while($All = $veste->fetch()){
+            echo "
 
-        <div class="col-lg-4 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/2.jpg" alt="" />
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>costume pour homme</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$115.00</span>
-                <!-- <del>$125.00</del> -->
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['img']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            ";
+          }
+        ?> 
 
-        <div class="col-lg-4 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/3.jpg" alt="" />
-               
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>style pour hommes</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$125.00</span>
-                <!-- <del>$135.00</del> -->
+        <?php
+         require './admin/cores/db.php';
+          $veste = $db->query("SELECT * FROM veste where types='femme' ORDER BY id DESC limit 1");
+          while($All = $veste->fetch()){
+            echo "
+
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            ";
+          }
+        ?> 
+         <?php
+         require './admin/cores/db.php';
+          $veste = $db->query("SELECT * FROM veste where types='enfant' ORDER BY id DESC limit 1");
+          while($All = $veste->fetch()){
+            echo "
+
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                </div>
+                </div>
+              </div>
+            </div>
+            ";
+          }
+        ?> 
+        <!-- Tunique -->
+        <?php
+         require './admin/cores/db.php';
+          $veste = $db->query("SELECT * FROM tunique where types='homme' ORDER BY id DESC limit 1");
+          while($All = $veste->fetch()){
+            echo "
+
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                </div>
+                </div>
+              </div>
+            </div>
+            ";
+          }
+        ?> 
+
+        <?php
+         require './admin/cores/db.php';
+          $veste = $db->query("SELECT * FROM tunique where types='femme' ORDER BY id DESC limit 1");
+          while($All = $veste->fetch()){
+            echo "
+
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                </div>
+                </div>
+              </div>
+            </div>
+            ";
+          }
+        ?> 
+         <?php
+         require './admin/cores/db.php';
+          $veste = $db->query("SELECT * FROM tunique where types='enfant' ORDER BY id DESC limit 1");
+          while($All = $veste->fetch()){
+            echo "
+
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                </div>
+                </div>
+              </div>
+            </div>
+            ";
+          }
+        ?> 
+ 
       </div>
     </div>
   </section>
@@ -219,138 +314,58 @@
 
       <div class="row">
 
-        <div class="col-lg-6">
-          <div class="new_product">
-            <h5 class="text-uppercase">Notre collection</h5>
-            <h3 class="text-uppercase">Costume pour hommes vrais</h3>
-            <div class="product-img">
-              <img class="img-fluid" src="img/our/4.jpg" alt="" />
-            </div>
-            <h4>$120.70</h4>
-            <a href="./detail.php" class="main_btn">Acheter</a>
-          </div>
-        </div>
+        <?php
+         require './admin/cores/db.php';
+          $veste = $db->query("SELECT * FROM veste where types='homme' ORDER BY id DESC limit 4");
+          while($All = $veste->fetch()){
+            echo "
 
-        <div class="col-lg-6 mt-5 mt-lg-0">
-          <div class="row">
-
-            <div class="col-lg-6 col-md-6">
-              <div class="single-product">
-                <div class="product-img">
-                  <img class="img-fluid w-100" src="img/our/5.jpg" alt="" />
-                  <!-- <div class="p_icon">
-                    <a href="#">
-                      <i class="ti-eye"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-heart"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-shopping-cart"></i>
-                    </a>
-                  </div> -->
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
                 </div>
-                <div class="product-btm">
-                  <a href="#" class="d-block">
-                    <h4>Dernier Costume</h4>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
                   </a>
-                  <div class="mt-3">
-                    <span class="mr-4">$125.00</span>
-                    <!-- <del>$135.00</del> -->
-                    <a href="./single-product.html" class="main_btn">Acheter</a>
-                  </div>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                    <a href='./detail.php?habit_choisi=".$All['id']."' class='main_btn'>Acheter</a>
+                </div>
                 </div>
               </div>
             </div>
+            ";
+          }
+        ?> 
+         <?php
+           require './admin/cores/db.php';
+         //Pour le veste homme
+          $veste = $db->query("SELECT * FROM  tunique where types='homme' ORDER BY id DESC limit 4");
+          while($All = $veste->fetch()){
+            echo "
 
-            <div class="col-lg-6 col-md-6">
-              <div class="single-product">
-                <div class="product-img">
-                  <img class="img-fluid w-100" src="img/our/6.jpg" alt="" />
-                  <!-- <div class="p_icon">
-                    <a href="#">
-                      <i class="ti-eye"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-heart"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-shopping-cart"></i>
-                    </a>
-                  </div> -->
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
                 </div>
-                <div class="product-btm">
-                  <a href="#" class="d-block">
-                    <h4>Tissus pour homme</h4>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
                   </a>
-                  <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <!-- <del>$35.00</del> -->
-                    <a href="./single-product.html" class="main_btn">Acheter</a>
-                  </div>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']." $</span>
+                  <a href='./single_tunique.php?tunique_choisi=".$All['id']."' class='main_btn'>Acheter</a>
+                </div>
                 </div>
               </div>
             </div>
+            ";
+          }
+        ?>    
 
-            <div class="col-lg-6 col-md-6">
-              <div class="single-product">
-                <div class="product-img">
-                  <img class="img-fluid w-100" src="img/our/6.jpg" alt="" />
-                  <!-- <div class="p_icon">
-                    <a href="#">
-                      <i class="ti-eye"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-heart"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-shopping-cart"></i>
-                    </a>
-                  </div> -->
-                </div>
-                <div class="product-btm">
-                  <a href="#" class="d-block">
-                    <h4>Pantalon</h4>
-                  </a>
-                  <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <!-- <del>$35.00</del> -->
-                    <a href="./single-product.html" class="main_btn">Acheter</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6">
-              <div class="single-product">
-                <div class="product-img">
-                  <img class="img-fluid w-100" src="img/our/1.jpg" alt="" />
-                  <!-- <div class="p_icon">
-                    <a href="#">
-                      <i class="ti-eye"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-heart"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ti-shopping-cart"></i>
-                    </a> 
-                  </div> -->
-                </div>
-                <div class="product-btm">
-                  <a href="#" class="d-block">
-                    <h4>les vrais hommes</h4>
-                  </a>
-                  <div class="mt-3">
-                    <span class="mr-4">$25.00</span>
-                    <!-- <del>$35.00</del> -->
-                    <a href="./single-product.html" class="main_btn">Acheter</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -362,236 +377,66 @@
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h2><span>Produits pour femmes</span></h2>
+            <h2><span>Nouveau Produits pour femmes</span></h2>
             <p>L'habillement classe sur mesures</p>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/11.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
+  
+        <?php
+         require './admin/cores/db.php';
+          $veste_ = $db->query("SELECT * FROM veste where types='femme' ORDER BY id DESC limit 4");
+          while($All = $veste->fetch()){
+            echo "
 
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/12.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']." $</span>
+                  <a href='./detail.php?habit_choisi=".$All['id']."' class='main_btn'>Acheter</a>
+                </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            ";
+          }
+        ?>
+         <?php
+           require './admin/cores/db.php';
+         //Pour le veste femme
+          $veste = $db->query("SELECT * FROM  tunique where types='femme' ORDER BY id DESC limit 4");
+          while($All = $veste->fetch()){
+            echo "
 
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/11.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                    <a href='./single_tunique.php?tunique_choisi=".$All['id']."' class='main_btn'>Acheter</a>
+                </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/12.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/11.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/12.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/11.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/12.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
+            ";
+          }
+        ?>
+         
       </div>
     </div>
   </section>
@@ -603,236 +448,68 @@
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h2><span>Produits pour Enfants </span></h2>
+            <h2><span>Nouveau Produits pour Enfants </span></h2>
             <p>L'habillement classe sur mesures</p>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/11.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
+         
+      <?php
+         require './admin/cores/db.php';
+         //Pour le veste enfant
+          $veste = $db->query("SELECT * FROM veste where types='enfant' ORDER BY id DESC limit 4");
+          while($All = $veste->fetch()){
+            echo "
 
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/12.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                  <a href='./detail.php?habit_choisi=".$All['id']."' class='main_btn'>Acheter</a>
+                </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            ";
+          }
+        ?>
+        <?php
+           require './admin/cores/db.php';
+         //Pour le veste enfant
+          $veste = $db->query("SELECT * FROM  tunique where types='enfant' ORDER BY id DESC limit 4");
+          while($All = $veste->fetch()){
+            echo "
 
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/11.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
+            <div class='col-lg-3 col-md-6'>
+              <div class='single-product'>
+                <div class='product-img'>
+                <img class='img-fluid w-100' src='./images/".$All['img']."' alt='' />
+                </div>
+                <div class='product-btm'>
+                  <a href='#' class='d-block'>
+                  <h4>".$All['nom']."</h4>
+                  </a>
+                <div class='mt-3'>
+                  <span class='mr-4'>$".$All['prix']."</span>
+                    <a href='./single_tunique.php?tunique_choisi=".$All['id']."' class='main_btn'>Acheter</a>
+                </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
+            ";
+          }
+        ?>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/12.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/11.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/12.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/11.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-product">
-            <div class="product-img">
-              <img class="img-fluid w-100" src="img/our/12.jpeg" alt="" />
-              <!-- <div class="p_icon">
-                <a href="#">
-                  <i class="ti-eye"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-heart"></i>
-                </a>
-                <a href="#">
-                  <i class="ti-shopping-cart"></i>
-                </a>
-              </div> -->
-            </div>
-            <div class="product-btm">
-              <a href="#" class="d-block">
-                <h4>Dernier produit</h4>
-              </a>
-              <div class="mt-3">
-                <span class="mr-4">$25.00</span>
-                <!-- <del>$35.00</del> -->
-              </div>
-            </div>
-          </div>
-        </div>
+         
       </div>
     </div>
   </section>
@@ -841,16 +518,17 @@
   <!--================ Start Blog Area =================-->
   <section class="blog-area section-gap">
     <div class="container">
+
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="main_title">
-            <h2><span>Dernier blog</span></h2>
-            <p>L'habillement classe sur mesures. lisez un peu</p>
+            <h2><span>L'habillement classe sur mesures. lisez un peu</span></h2>
+            <p>Chez Baruvi Businness</p>
           </div>
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="single-blog">
             <div class="thumb">
@@ -919,7 +597,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
   <!--================ End Blog Area =================-->

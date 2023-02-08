@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Baruvi.com | Admin</title>
   <!-- plugins:css -->
-  <link rel="icon" type="image/x-icon" href="./assets/covers/logo.png" />
+  <link rel="icon" type="image/x-icon" href="../img/log.png"/>
   <link rel="stylesheet" href="./assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="./assets/vendors/flag-icon-css/css/flag-icon.min.css">
   <link rel="stylesheet" href="./assets/vendors/css/vendor.bundle.base.css">

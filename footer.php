@@ -42,24 +42,13 @@
           <h4>Nous sommes là pour vous rendre classe</h4>
           <p>Vous pouvez nous faire confiance. Nous egalement</p>
           <div class="form-wrap" id="mc_embed_signup">
-            <!-- <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-              method="get" class="form-inline">
-              <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''"
-                onblur="this.placeholder = 'Votre Email '" required="" type="email">
-              <button class="click-btn btn btn-default">Subscrire</button>
-              <div style="position: absolute; left: -5000px;">
-                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-              </div>
-
-              <div class="info"></div>
-            </form> -->
           </div>
         </div>
       </div>
       <div class="footer-bottom row align-items-center">
         <p class="footer-text m-0 col-lg-8 col-md-12">
         Copyright &copy;<script>document.write(new Date().getFullYear());
-        </script> Tout droit reservé à Baruvi Business | site realisé
+        </script> Tout droit reservé à Baruvi Business 2023 | site realisé
          par 
         <a href="#" target="_blank">Fidba Graphics web team</a>
         <i class="fa fa-code" aria-hidden=""></i>

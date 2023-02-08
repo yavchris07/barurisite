@@ -5,8 +5,8 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="icon" href="img/favicon.png" type="image/png" />
-  <title>Baruvi ecommerce</title>
+  <link rel="icon" href="./img/log.png" type="image/jpg" />
+  <title>Baruvi business</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" href="vendors/linericon/style.css" />
@@ -32,7 +32,7 @@
           <div class="col-lg-7">
             <div class="float-left">
               <p>Telephone service client: +243 990 411 745</p>
-              <p>email: client@baruvi.com</p>
+              <p>email: client@baruvi.net</p>
             </div>
           </div>
           <div class="col-lg-5">
@@ -54,8 +54,7 @@
         <nav class="navbar navbar-expand-lg navbar-light w-100">
           <!-- Brand and toggle get grouped for better mobile display -->
           <a class="navbar-brand logo_h" href="index.php">
-            <!-- <img src="img/logo.png" alt="" /> -->
-            BARUVI
+            <img src="img/logo.png" alt="" style="widht:70px; height:50px"/>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,13 +104,13 @@
                       </li> 
                     </ul> 
                   </li> -->
-                  <li class="nav-item ">
+                  <!-- <li class="nav-item ">
                     <a class="nav-link" href="blog.php" >Blog</a>
-                    <!-- 
+                    
                       li submenu dropdown
                       class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                      aria-expanded="false" -->
-                  </li>
+                      aria-expanded="false"
+                  </li> -->
                   <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contacts</a>
                   </li>

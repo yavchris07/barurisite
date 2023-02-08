@@ -6,7 +6,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Plus Admin</title>
+  <title>Baruvi Business Admin</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="./assets/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="./assets/vendors/flag-icon-css/css/flag-icon.min.css">
@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="./assets/css/demo_1/style.css" />
   <!-- End layout styles -->
-  <link rel="shortcut icon" href="./assets/images/favicon.png" />
+  <link rel="shortcut icon" href="../img/log.png" />
 </head><body style="padding-top:100px;">
   <div class="row justify-content-center br-40 mt-5" >
     <div class="col-md-4 grid-margin stretch-card ">
@@ -33,28 +33,54 @@
 						<div class="box-body" >
                                      
 							<h4 style="text-align:center;">
-								<img src="./logo/writer.png" alt="profile" width="130px" /> 
-								<br> <br>Baruvi Admin panel
+								<img src="../img/log.png" alt="profile" width="130px" /> 
+								<br> <br>Baruvi Business Admin panel
 							</h4>
                             
 							<form method="post">
 								<div class="form-group">
 									<label>Email</label>
-									<input type="mail" name="email" <?php if(isset($_POST['email'])){ $myvalue=$_POST['email'];?>value="<?php echo $myvalue ;} ?>" class="form-control" placeholder="moi@gmail.com">
+									<input 
+										type="mail" 
+										name="email" <?php if(isset($_POST['email'])){ $myvalue=$_POST['email'];?>
+										value="<?php echo $myvalue ;} ?>" 
+										class="form-control" 
+										placeholder="moi@gmail.com ou moi@barvuvi.net"
+									>
 								</div>
 								<div class="form-group">
 									<label class="fw">Password
 										
 									</label>
-									<input type="password" name="password" class="form-control" placeholder="************************">
+									<input 
+										type="password" 
+										name="password" 
+										class="form-control" 
+										placeholder="******************************"
+									>
 								</div>
 								<div class="form-group text-right">
                                    <?php require "./cores/auth.php" ?>
-									<button name="connection" class="btn btn-primary btn-block">Se connecter</button>
+									<button 
+										name="connection" 
+										class="btn btn-primary btn-block"
+									>
+									Se connecter
+								</button>
 								</div>
 								<div class="form-group text-center">
-									<span class="text-muted pull-right" style="font-size:13px;">Vous n'avez pas un compte ?</span> <br>
-                                     <span class="text-muted pull-right" style="font-size:13px;"> Veuillez Contacter l'administrateur du systeme</span>
+									<span 
+										class="text-muted pull-right" 
+										style="font-size:13px;">
+										Vous n'avez pas un compte ?
+									</span>
+									<br>
+                                    <span 
+										class="text-muted pull-right" 
+										style="font-size:13px;"
+									>
+									Veuillez Contacter l'administrateur du systeme
+									</span>
 								</div>
 							</form>
 

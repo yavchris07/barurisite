@@ -124,10 +124,12 @@
           </div>
 
           <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+            <span class="contact-info__icon">
+              <i class="ti-tablet"></i>
+            </span>
             <div class="media-body">
               <h3><a href="#">Direction +243 993 016 511</a></h3>
-              <p>victoirebakunzi@baruvi.com</p>
+              <p>victoirebakunzi@baruvi.net</p>
             </div>
           </div>
 
@@ -135,15 +137,15 @@
             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
             <div class="media-body">
               <h3><a href="#">Service client +243 990 411 745</a></h3>
-              <p>client@baruvi.com</p>
+              <p>client@baruvi.net</p>
             </div>
           </div>
 
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-email"></i></span>
             <div class="media-body">
-              <h3><a href="mailto:support@colorlib.com">victoirebakunzi@baruvi.com</a></h3>
-              <p>client@baruvi.com</p>
+              <h3><a href="mailto:support@colorlib.com">victoirebakunzi@baruvi.net</a></h3>
+              <p>client@baruvi.net</p>
             </div>
           </div>
 
@@ -153,6 +155,39 @@
         <h3>EQUIPE MANAGERIALE</h3>
         <div class="col-lg-12 team">
 
+
+
+        <?php
+         require './admin/cores/db.php';
+          $team = $db->query("SELECT * FROM team ");
+          while($all = $team->fetch()){
+            echo "
+
+            <div class='kart'>
+              <img
+                style='
+                  height: 200px; 
+                  width: 50%; 
+                  border-radius: 50%; 
+                  object-fit: cover;
+                  background: black;
+                  object-fit: cover;'
+                class='img-fluid w-100' 
+                src='./images/".$all['img']."' alt='' 
+                />
+                <h4>".$all['noms']."</h4>
+              <p>".$all['titre']."</p>
+            </div>
+
+            ";
+          }
+        ?> 
+
+   
+
+
+          
+<!-- 
           <div class="kart">
             <img 
               src="./img/our/2.jpg" 
@@ -170,15 +205,6 @@
               <h4>Noms sdksjakdj</h4>
               <p>Titre </p>
           </div>
-
-          <div class="kart">
-            <img 
-              src="./img/our/2.jpg" 
-              alt=""
-              >
-              <h4>Noms sdksjakdj</h4>
-              <p>Titre </p>
-          </div>
           <div class="kart">
             <img 
               src="./img/our/2.jpg" 
@@ -193,9 +219,10 @@
               src="./img/our/2.jpg" 
               alt=""
               >
+              jfp2023TN7NeJ3AY(client)
               <h4>Noms sdksjakdj</h4>
               <p>Titre </p>
-          </div>
+          </div> -->
 
            
         </div>

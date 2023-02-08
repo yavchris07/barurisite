@@ -12,8 +12,8 @@
             <p>Pour nos aimables clients</p>
           </div>
           <div class="page_link">
-            <a href="index.html">Accueil</a>
-            <a href="checkout.html">Magazin / Accessoirs</a>
+            <a href="index.php">Accueil</a>
+            <a href="#">Magazin / Accessoirs</a>
           </div>
         </div>
       </div>

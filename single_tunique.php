@@ -4,14 +4,14 @@
     <section class=" section_gap">
 
   <?php
-  require './admin/cores/db.php';
+    require './admin/cores/db.php';
     
-    if(isset($_GET['habit_choisi'])){
-      $id = ($_GET['habit_choisi']);
+    if(isset($_GET['tunique_choisi'])){
+      $id = ($_GET['tunique_choisi']);
       //var_dump($id);
       if (is_numeric($id)) {
         //require './admin/cores/db.php';
-        $query = $db->query("SELECT * FROM veste WHERE id='".$id."'");
+        $query = $db->query("SELECT * FROM tunique WHERE id='".$id."'");
         $choisi= $query->fetch();
         //var_dump($choisi);
         //echo $choisi;
@@ -20,8 +20,9 @@
         $titre=$choisi['nom'];
         $prix=$choisi['prix'];
         $img=$choisi['img'];
-        $type=$choisi['types'];   
-?>
+        $type=$choisi['types'];
+  ?>
+
     <h2 style="margin-left:20%"> 
       NOTRE SERVICE CLIENT
     </h2>
@@ -47,7 +48,7 @@
               <ul class="list">
                 <li>
                   <a class="active" href="#">
-                    Veste pour: <span><?php echo $type; ?></span>
+                    Tunique pour: <span><?php echo $type; ?></span>
                   </a>
                 </li>
               </ul>
@@ -55,18 +56,17 @@
               <div class="card_area">
                 <a 
                   class="main_btn" 
-                  href="https://wa.me/+243990411745?text=Bonjour Baruvi Business,(Service client) !, je suis  interressé(e) par cet habit (Veste): <?php echo  "« $titre »"; echo "« $prix » "; echo "Numéro « $id » "; echo "Numéro « $type » "; ?>,  ?"
+                  href="https://wa.me/+243990411745?text=Bonjour Baruvi Business(Service client) !, je suis  interressé(e) par cet habit (Tunique): <?php echo  "« $titre »"; echo "Prix :« $prix » "; echo "Numéro « $id » "; echo "Pour : « $type » "; ?>"
                   target="_blank"
                   style="
                     background:green;
                     border:1px solid white"
                   >
-                  <i class="mdi mdi-whatsapp"></i>
-                  Contactez par whatsapp
+                  <i class="lnr lnr lnr-diamondss"></i>
+                  Contactez le service Client
                 </a>
-               
                 <a class="icon_btn" href="#">
-                  <i class="lnr lnr lnr-heart"></i>
+                  <i class="lnr lnr lnr-diamond"></i>
                 </a>
                 <br>
               </div>

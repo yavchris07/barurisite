@@ -22,22 +22,25 @@
     <!--================End Home Banner Area =================-->
 
   <!--================Blog Area =================-->
-  <section class="blog_area section_gaps">
-    <p>
+  <br>
+  <br>
+ 
+  <section class="blog_area section_gaps" style="text-align: justify;">
+    <p class="ap" style="font-size:20px">
     Baruvi Business est une entreprise basée à Goma qui œuvre dans la mode et qui se spécialise dans la transformation des tissus en habits, 
     en produisant sur mesures des vestes et tuniques africaines pour homme, femme et enfant.
     </p>
-    <p>
+    <p class="ap" style="font-size:20px">
       Créée en 2018 par Victoire Bakunzi, pendant cette période le fondateur analysait, testait et étudiait  son futur marché, 
       ce qui lui a permis de travailler en tant que Freelancer durant deux ans  pour ensuite lancer officiellement ses activités en 2020 en tant qu’une marque BARUVI. 
       Ce nom même est issu des initiales des noms du fondateur.
     </p>
-    <p>
+    <p class="ap" style="font-size:20px">
       Ayant eu un début très froid, Baruvi Business a quand même survécu aux défis rencontrés au cours de ses deux premières années car les défis étaient énormes sans ignorer l’impact négatif de la Covid-19.
       Malgré cela, rien n’a été abandonné et aujourd’hui nous avons une entreprise qui valorise l’esprit artistique et créatif au niveau local, grâce à cette entreprise, on peut se voir bien habillé localement, 
       car cette entreprise a pour mission de résoudre le problème du manque du professionnalisme de la couture locale en ville de Goma en offrant à sa population des habillements class, d’une haute qualité et selon son gré.
     </p>
-    <p>
+    <p class="ap" style="font-size:20px">
       Baruvi a pu habiller des grands hommes politiques, des hommes de Dieu, des professeurs, des entrepreneurs, des mariés, etc. Avec ça, 
       Baruvi a déjà livré dans quelques autres villes du pays à part Goma, notamment Kinshasa, Lubumashi, Butembo, Beni, Bukavu, maintenant le souhait est d’amener cette initiative dans tout l’ensemble du pays et faire de Baruvi une marque qui va être consommée partout en RDC et dans le monde.
     </p>

@@ -64,31 +64,31 @@
         </li> -->
 <!-- =============================================================================== -->
         <li class="nav-item">
-          <a class="nav-link" href="./add_member.php">
-            <!-- <i class="mdi mdi-account-circle menu-icon"></i> -->
+          <a class="nav-link" href="./ajoute_veste.php">
+            <i class="mdi mdi-account menu-icon"></i>
             <span class="menu-title">Ajouter Veste</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="./add_member.php">
-            <!-- <i class="mdi mdi-account-circle menu-icon"></i> -->
+          <a class="nav-link" href="./ajoute_tunique.php">
+            <i class="mdi mdi-account-outline menu-icon"></i>
             <span class="menu-title">Ajouter Tunique</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="./add_on_lib.php">
-            <!-- <i class="mdi mdi-account-circle menu-icon"></i> -->
+          <a class="nav-link" href="./accessoires.php">
+            <i class="mdi mdi-android-studio menu-icon"></i>
             <span class="menu-title">Ajouter Accessoirs</span>
           </a>
         </li>
          
        
         <li class="nav-item">
-          <a class="nav-link" href="./librairie.php">
-            <!-- <i class="mdi mdi-account-circle menu-icon"></i> -->
-            <span class="menu-title">Tous Nos abonnés</span>
+          <a class="nav-link" href="./team.php">
+            <i class="mdi mdi-account-multiple-plus menu-icon"></i>
+            <span class="menu-title">Team</span>
           </a>
         </li>
 
