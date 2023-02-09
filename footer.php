@@ -59,7 +59,7 @@
  
         </p>
         <div class="col-lg-4 col-md-12 footer-social">
-          <a href="https://www.facebook.com/groups/2978210792445513" target="_blank">
+          <a href="https://www.facebook.com/BaruviBusiness?mibextid=LQQJ4d" target="_blank">
             <i class="fa fa-facebook"></i>
           </a>
           <a 

@@ -2,29 +2,14 @@
 
   <!--================Home Banner Area =================-->
 
-  <section class="offer_area" style="height:500px">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="offset-lg-8 col-lg-1 text-right">
-          <div class="offer_content">
-            <h2 class="text-uppercase">Baruvi Business</h2>
-            <p style="color:grey">
-              " L'habillement classe sur mesures,habillement classe sur mesures " 
-            </p>
-            <!-- <a href="#" class="main_btn mb-20 mt-5">Decouvrez Maintenant</a> -->
-            <!-- <p style="color: white;">Limitez le temps de Solde</p> -->
-          </div>
-        </div>
-        <h3 
-          class="text-uppercase mb-40" 
-          style="
-            maring-right:5px;
-            color:orange;
-            bottom: 5px"
-          > 
-          " L'habillement classe sur mesures " 
-        </h3>
-      </div>
+  <section class="offer_area">
+    <div class="kontainer">
+      <h2 
+        class="child"
+      >
+          Baruvi Business
+      </h2>
+      <p> habillement classe et sur mesures</p>
     </div>
   </section>
 

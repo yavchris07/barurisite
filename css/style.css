@@ -19,16 +19,55 @@ h6 {
     font-weight: 500
 }
 /* ==================================== */
-/* .container{
-    background: transparent;
-}
-.d-none{
-    background: transparent;
-}
-.mp{
-    margin-top: -10px;
+ 
+.offer_area{
+    height: 470px;
+    background: url(../img/our/01.jpeg) no-repeat center;
+    background-size: cover;
     
-} */
+}
+.offer_area .kontainer{
+    width: 100%;
+    height: 100%;
+    /* backdrop-filter: blur(10px); */
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    bottom: 10px;
+    padding-top: 300px;
+}
+.offer_area .kontainer p{
+    color: orange;
+    font-size: 20px;
+}
+
+.offer_area .kontainer h2{
+    font-size: 100px;
+    color: #2693ae;
+    text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+    
+    .offer_area .kontainer{
+        width: 100%;
+        height: 100%;
+        /* backdrop-filter: blur(10px); */
+        /* padding-left: 10px;
+        bottom: 10px; */
+        padding-top: 370px;
+    }
+    .offer_area .kontainer p{
+        color: orange;
+        font-size: 17px;
+    }
+    
+    .offer_area .kontainer h2{
+        font-size: 50px;
+        color: #2693ae;
+        font-weight:bold;
+        text-transform: uppercase;
+    }
+}
 .team{
     display: flex;
     background: transparent;
@@ -58,7 +97,7 @@ h6 {
 }
 
 .offer_content h2 {
-    font-size: 100px;
+    font-size: 80px;
     line-height: 80px;
     color: #298cdf;
     /* color: #2a2a2a; */
@@ -70,6 +109,11 @@ h6 {
 }
 .ap{
     font-size: 20px;
+}
+@media(max-width: 600px){
+    .offs .offer_content h2{
+        font-size: 20px;
+    }
 }
 /* ==================================== */
 
@@ -725,32 +769,29 @@ ul {
     color: #298cdf;
 }
 
-.offer_area {
-    background: url(../img/our/01.jpeg) no-repeat center;
-    background-size: cover;
-    /* backdrop-filter: blur(15px); */
-}
-
-@media (max-width: 991px) {
-    .offer_area {
-        background: #f6f6f6
+/* @media(max-width:999px){
+    .offer_content{
+        padding: 20px 10px;
     }
-}
-
-
-
+    .offer_content h2{
+        font-size: 30px;
+    }
+} */
 @media (max-width: 991px) {
     .offer_content {
-        padding: 100px 0px
+        padding: 50px 0px
     }
 }
-
-
 
 @media (max-width: 767px) {
     .offer_content h2 {
-        font-size: 60px;
-        line-height: 60px
+        font-size: 30px;
+        line-height: 40px
+    }
+}
+@media (max-width: 600px) {
+    .offer_content h2 {
+        font-size: 20px;
     }
 }
 
