@@ -51,10 +51,7 @@ h6 {
     .offer_area .kontainer{
         width: 100%;
         height: 100%;
-        /* backdrop-filter: blur(10px); */
-        /* padding-left: 10px;
-        bottom: 10px; */
-        padding-top: 370px;
+        text-align: center;
     }
     .offer_area .kontainer p{
         color: orange;
