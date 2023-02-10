@@ -1,28 +1,7 @@
 <?php require './header.php'?>
 
   <!--================Home Banner Area =================-->
-<!-- 
-  <section class="offer_area" style="height:500px">
-    <div class="container">
-      <div class="row justify-content-left">
-        <div class="offset-lg-8 col-lg-1 text-left">
-          <div class="offer_content">
-            <h2 class="text-uppercase">Baruvi Business</h2>
-            
-          </div>
-        </div>
-        <h3 
-          class="text-uppercase mb-40" 
-          style="
-            maring-right:5px;
-            color:orange;
-            bottom: 5px"
-          > 
-          " L'habillement classe sur mesures " 
-        </h3>
-      </div>
-    </div>
-  </section> -->
+ 
   <section class="offer_area">
     <div class="kontainer">
       <h2 
@@ -58,55 +37,6 @@
     </div>
   </section>
   <!--================End Home Banner Area =================-->
-
-  <!-- Start feature Area -->
-  <!-- <section class="feature-area section_gap_bottom_custom">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-feature">
-            <a href="#" class="title">
-              <i class="flaticon-money"></i>
-              <h3>Garantie de remboursement</h3>
-            </a>
-            <p>Doit ouvrir un .....</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-feature">
-            <a href="#" class="title">
-              <i class="flaticon-truck"></i>
-              <h3>Livraison Graduit</h3>
-            </a>
-            <p>Doit ouvrir un .....</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-feature">
-            <a href="#" class="title">
-              <i class="flaticon-support"></i>
-              <h3>Soutien toujours</h3>
-            </a>
-            <p>Doit ouvrir un .....</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-feature">
-            <a href="#" class="title">
-              <i class="flaticon-blockchain"></i>
-              <h3>Payment Securise</h3>
-            </a>
-            <p>Doit ouvrir un .....</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End feature Area -->
 
   <!--================ Feature Product Area =================-->
   <section class="feature_product_area section_gap_bottom_custom">
@@ -275,23 +205,6 @@
   </section>
   <!--================ End Feature Product Area =================-->
 
-  <!--================ Offer Area =================-->
-  <!-- <section class="offer_area">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="offset-lg-4 col-lg-6 text-center">
-          <div class="offer_content">
-            <h3 class="text-uppercase mb-40">Toute la </h3>
-            <h2 class="text-uppercase">50% de reduction</h2>
-            <a href="#" class="main_btn mb-20 mt-5">Decouvrez Maintenant</a>
-            <p style="color: white;">Limitez le temps de Solde</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!--================ End Offer Area =================-->
-
   <!--================ New Product Area =================-->
   <section class="new_product_area section_gap_top section_gap_bottom_custom">
     <div class="container">
@@ -300,20 +213,6 @@
           <div class="main_title">
             <h2><span>Nouveau Produits pour Hommes</span></h2>
             <p> L'habillement classe sur mesures</p>
-            <!-- <section class="offer_area">
-              <div class="container">
-                <div class="row justify-content-center">
-                  <div class="offset-lg-4 col-lg-8 text-center">
-                    <div class="offer_content">
-                       <h3 class="text-uppercase mb-40">Toute la </h3>
-                      <h3 class="text-uppercase">L'habillement classe sur mesures</h3>
-                       <a href="#" class="main_btn mb-20 mt-5">Decouvrez Maintenant</a>
-                      <p style="color: white;">Limitez le temps de Solde</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>  -->
           </div>
         </div>
       </div>
@@ -521,7 +420,7 @@
   </section>
   <!-- ================================================== -->
 
-  <!--================ Start Blog Area =================-->
+  <!--================ foot Area =================-->
   <section class="blog-area section-gap">
     <div class="container">
 
@@ -534,77 +433,7 @@
         </div>
       </div>
 
-      <!-- <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="single-blog">
-            <div class="thumb">
-              <img class="img-fluid" src="img/our/1.jpg" alt="">
-            </div>
-            <div class="short_details">
-              <div class="meta-top d-flex">
-                <a href="#">Par Admin</a>
-                <a href="#"><i class="ti-comments-smiley"></i>2 Commentaire</a>
-              </div>
-              <a class="d-block" href="single-blog.html">
-                <h4>Le lit intelligent Ford empêche votre partenaire de dormir de monopoliser le tout</h4>
-              </a>
-              <div class="text-wrap">
-                <p>
-                  Qu'un cinquième j'apporte la mouche à la face divisée pour porter la division à la semence ailée de la lumière divisée en avant.
-                </p>
-              </div>
-              <a href="#" class="blog_btn">Lire plus <span class="ml-2 ti-arrow-right"></span></a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6">
-          <div class="single-blog">
-            <div class="thumb">
-              <img class="img-fluid" src="img/our/12.jpeg" alt="">
-            </div>
-            <div class="short_details">
-              <div class="meta-top d-flex">
-                <a href="#">Par Admin</a>
-                <a href="#"><i class="ti-comments-smiley"></i>2 Commentaire</a>
-              </div>
-              <a class="d-block" href="single-blog.html">
-                <h4>Le lit intelligent Ford empêche votre partenaire de dormir de monopoliser le tout</h4>
-              </a>
-              <div class="text-wrap">
-                <p>
-                  Qu'un cinquième j'apporte la mouche à la face divisée pour porter la division à la semence ailée de la lumière divisée en avant.
-                </p>
-              </div>
-              <a href="#" class="blog_btn">Lire plus <span class="ml-2 ti-arrow-right"></span></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="single-blog">
-            <div class="thumb">
-              <img class="img-fluid" src="img/our/11.jpeg" alt="">
-            </div>
-            <div class="short_details">
-              <div class="meta-top d-flex">
-                <a href="#">Par Admin</a>
-                <a href="#"><i class="ti-comments-smiley"></i>2 Commentaire</a>
-              </div>
-              <a class="d-block" href="single-blog.html">
-                <h4> Le lit intelligent Ford empêche votre partenaire de dormir de monopoliser le tout</h4>
-              </a>
-              <div class="text-wrap">
-                <p>
-                  Qu'un cinquième j'apporte la mouche à la face divisée pour porter la division à la semence ailée de la lumière divisée en avant.
-                </p>
-              </div>
-              <a href="#" class="blog_btn">Lire plus <span class="ml-2 ti-arrow-right"></span></a>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
-  <!--================ End Blog Area =================-->
+  <!--================ End foot Area =================-->
 <?php require './footer.php'?>

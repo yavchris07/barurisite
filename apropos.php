@@ -12,8 +12,8 @@
               <p>Savoir quelque chose sur nous !</p>
             </div>
             <div class="page_link">
-              <a href="index.html">Accueil</a>
-              <a href="blog.html">Apropos </a>
+              <a href="accueil.php">Accueil</a>
+              <a href="apropos.php">Apropos </a>
             </div>
           </div>
         </div>
